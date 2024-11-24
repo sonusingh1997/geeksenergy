@@ -100,6 +100,9 @@ const Dashboard = () => {
             <button onClick={HandleLogout}>
               <Link to="/logout">LOGOUT</Link>
             </button>
+            <button onClick={HandleLogout}>
+              <Link to="/logout">LOGOUT</Link>
+            </button>
           </div>
         </div>
         <div className="usernameshow">
