@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainPage {
+  display: flex;
+  margin: 187px 70px 60px 70px;
+  gap: 20px;
+  width: 90%;
+}
+
+.Right-Container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.RC-first {
+  display: flex;
+  gap: 20px;
+  justify-content: first baseline;
+  align-items: center;
+}
+
+.RC-first img {
+  width: 120px;
+}
+
+.RC-first h4 {
+  font-size: 25px;
+  color: #1877f2;
+  letter-spacing: 2px;
+}
+
+.RC-second h4 {
+  line-height: 30px;
+  font-size: 20px;
+  color: rgb(80, 77, 77);
+}
+
+.Left-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(242, 245, 245);
+  width: 30%;
+  height: auto;
+  padding: 30px;
+}
+
+Left-Container span {
+  text-align: center;
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+form input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(165, 162, 162);
+  outline: 0;
+  padding: 20px;
+  font-size: 18px;
+  color: rgb(146, 142, 142);
+  border: 1px solid transparent;
+}
+
+form button {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(165, 162, 162);
+  font-size: 18px;
+  color: white;
+  background-color: #1877f2;
+  cursor: pointer;
+}
+
+form .forgotP {
+  text-align: center;
+  text-decoration: none;
+  color: #1877f2;
+}
+
+form forgotP:hover {
+  text-decoration: underline;
+}
+
+form input:focus {
+  border: 1px solid skyblue;
+}
+
+form .registeration {
+  font-size: 20px;
+  border: 1px solid skyblue;
+  padding: 10px;
+  background-color: #1877f2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+}
+
+.form .registeration:active {
+  text-decoration: none;
+}

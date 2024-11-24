@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(236, 231, 231);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+}
+
+.navbar_logotext {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar_logotext img {
+  height: 60px;
+}
+
+.navbar_logotext p {
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: rgb(85, 81, 81);
+}
+
+.navbar_menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar_menu a {
+  display: block;
+  text-decoration: none;
+  color: rgb(85, 81, 81);
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.company_info {
+  position: relative;
+  display: inline-block;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.popup_style {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: 200px;
+}
+
+.popup_style span {
+  color: green;
+}
+
+.company_info:hover .popup {
+  display: block;
+}
+
+.container_sec {
+  display: flex;
+  margin: 30px;
+  background-color: #31cb7b5c;
+  padding: 10px;
+  border: 3px solid white;
+  height: auto;
+  flex-direction: column;
+}
+
+.cardsec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px;
+  background-color: white;
+  height: auto;
+  padding: 20px;
+}
+
+.carditems {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  background-color: rgb(219, 209, 209);
+  margin: auto;
+}
+
+.cartitems_flex {
+  display: flex;
+  gap: 15px;
+  margin: auto;
+  padding: 1px;
+}
+
+.carditems_right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 29vh;
+  overflow-wrap: break-word;
+
+  padding: 10px;
+  letter-spacing: 0.5px;
+}
+
+.carditems_right> :nth-child(1) {
+  font-size: 18px;
+  color: black;
+}
+
+.carditems_right> :nth-child(2) {
+  color: #373434b5;
+}
+
+.buttonclass button {
+  width: 100%;
+  padding: 3px;
+  margin: 10px 0 0 0;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  background-color: #464b85f5;
+  color: white;
+  font-weight: 600;
+}
+
+.carditems_image img {
+  height: 200px;
+  width: 100px;
+}
+
+.carditems_left span svg {
+  font-size: 58px;
+}
+
+.carditems_left> :nth-child(2) {
+  font-size: 30px;
+  text-align: center;
+  color: #373434b5;
+}
+
+.carditems_left> :nth-child(4) {
+  font-size: 17px;
+  text-align: center;
+  color: #373434b5;
+}
+
+.carditems_right_midtext {
+  color: #373434b5;
+}
+
+.carditems_right_downtext {
+  color: green;
+}
+
+.usernameshow {
+  text-align: right;
+  margin: 10px 20px;
+  color: brown;
+}
+
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.834);
+  z-index: 1;
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #3d5af1 transparent #3d5af1 transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagination-buttons button {
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  border: 0;
+  width: 100px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pagination-buttons :hover {
+  background-color: aqua;
+  color: red;
+}

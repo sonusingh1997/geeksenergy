@@ -1,0 +1,95 @@
+/* for page responsive */
+@media only screen and (max-width: 835px) {
+  .profession {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    color: rgb(146, 142, 142);
+    padding-left: 20px;
+  }
+
+  #dropdown {
+    height: 40px;
+  }
+}
+
+/* for styling page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  margin: 90px 70px 60px 70px;
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: center;
+  color: red;
+}
+
+.Left-Container {
+  background-color: rgb(242, 245, 245);
+  width: 40%;
+  height: auto;
+  padding: 30px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+form input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(165, 162, 162);
+  outline: 0;
+  padding: 20px;
+  font-size: 18px;
+  color: rgb(146, 142, 142);
+  border: 1px solid transparent;
+}
+
+form button {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(165, 162, 162);
+  font-size: 18px;
+  color: white;
+  background-color: #1877f2;
+  cursor: pointer;
+}
+
+.profession {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  color: rgb(146, 142, 142);
+  padding-left: 20px;
+}
+
+.profession p {
+  font-size: 20px;
+  color: #00000069;
+  font-weight: 600;
+}
+
+#dropdown {
+  outline: 0;
+  padding: 0 20px 0 20px;
+  background-color: #1877f2;
+  color: white;
+  border-radius: 5px;
+}
